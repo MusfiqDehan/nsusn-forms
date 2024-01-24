@@ -22,7 +22,7 @@ const ApplicationForm = () => {
     event.preventDefault();
 
     // Make a POST request to the server
-    fetch("http://localhost:3000/apply", {
+    fetch("https://nsusn-forms.up.railway.app/apply", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
