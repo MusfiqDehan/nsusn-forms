@@ -2,6 +2,7 @@ const express = require("express");
 const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
 const cors = require("cors");
+const port = process.env.PORT || 3000;
 require("dotenv").config();
 
 const app = express();
@@ -84,4 +85,6 @@ app.get("/api/v1/applicants", async (req, res) => {
 });
 
 // Start the server
-app.listen(3000, () => console.log("Server listening on port 3000"));
+app.listen(port, () => {
+    console.log(`App listening on port: ${port}`);
+});
