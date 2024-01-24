@@ -2,6 +2,7 @@ const express = require("express");
 const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
 const cors = require("cors");
+require("dotenv").config();
 
 const app = express();
 
@@ -12,46 +13,71 @@ app.use(cors());
 app.use(express.static("public"));
 
 // Connect to MongoDB Atlas
-mongoose.connect(
-    "mongodb+srv://nsusn-forms-musfiq:uM3eBXJJgg8qensy@nsusn-forms.xmjuata.mongodb.net/test?retryWrites=true&w=majority"
-);
+mongoose.connect(process.env.MONGODB_URI);
 
 // Define Mongoose schema for contact form data
-const contactSchema = new mongoose.Schema({
+const applicationFormSchema = new mongoose.Schema({
     name: String,
     email: String,
-    subject: String,
-    message: String,
+    contactNo: String,
+    linkedinLink: String,
+    ideaName: String,
+    startupSiteLink: String,
+    fbPageLink: String,
+    streamCategory: String,
+    domainType: String,
+    problem: String,
+    solution: String,
+    cofounderDetails: String,
+    hasMVP: String,
+    pitchDeckFileLink: String,
+    productDemoLink: String,
+    expectedSupport: String,
 });
 
 // Create Mongoose model
-const Contact = mongoose.model("Contact", contactSchema);
+const ApplicationForm = mongoose.model(
+    "ApplicationForm",
+    applicationFormSchema
+);
 
 // Middleware to parse JSON bodies
 app.use(bodyParser.json());
 
 // Route to handle contact form submissions
-app.post("/contact", async (req, res) => {
-    const newContact = new Contact({
+app.post("/apply", async (req, res) => {
+    const newApplication = new ApplicationForm({
         name: req.body.name,
         email: req.body.email,
-        subject: req.body.subject,
-        message: req.body.message,
+        contactNo: req.body.contactNo,
+        linkedinLink: req.body.linkedinLink,
+        ideaName: req.body.ideaName,
+        startupSiteLink: req.body.startupSiteLink,
+        fbPageLink: req.body.fbPageLink,
+        streamCategory: req.body.streamCategory,
+        domainType: req.body.domainType,
+        problem: req.body.problem,
+        solution: req.body.solution,
+        cofounderDetails: req.body.cofounderDetails,
+        hasMVP: req.body.hasMVP,
+        pitchDeckFileLink: req.body.pitchDeckFileLink,
+        productDemoLink: req.body.productDemoLink,
+        expectedSupport: req.body.expectedSupport,
     });
 
     try {
-        const contact = await newContact.save();
-        return res.status(200).send(contact);
+        const application = await newApplication.save();
+        return res.status(200).send(application);
     } catch (err) {
         return res.status(500).send(err);
     }
 });
 
 // Route to fetch all contact form submissions
-app.get("/api/v1/contact", async (req, res) => {
+app.get("/api/v1/applicants", async (req, res) => {
     try {
-        const contacts = await Contact.find({});
-        return res.status(200).send(contacts);
+        const applicants = await ApplicationForm.find({});
+        return res.status(200).send(applicants);
     } catch (err) {
         return res.status(500).send(err);
     }
