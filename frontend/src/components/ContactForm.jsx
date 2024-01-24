@@ -25,17 +25,51 @@ const ContactForm = () => {
   };
 
   return (
-    <form ref={form} onSubmit={sendEmail}>
-      <label>Name</label>
-      <input type="text" name="user_name" />
-      <label>Email</label>
-      <input type="email" name="user_email" />
-      <label>Subject</label>
-      <input type="text" name="subject" />
-      <label>Message</label>
-      <textarea name="message" />
-      <input type="submit" value="Send" />
-    </form>
+    <>
+      <h1 className="text-3xl font-bold">Contact Form</h1>
+      <form ref={form} onSubmit={sendEmail}>
+        <label className="block p-5">
+          Name
+          <input
+            type="text"
+            name="user_name"
+            placeholder="Type here"
+            className="input input-bordered w-full max-w-xs"
+          />
+        </label>
+        <label className="block p-5">
+          Email
+          <input
+            type="email"
+            name="user_email"
+            placeholder="Type here"
+            className="input input-bordered w-full max-w-xs"
+          />
+        </label>
+        <label className="block p-5">
+          Subject
+          <input
+            type="text"
+            name="subject"
+            placeholder="Type here"
+            className="input input-bordered w-full max-w-xs"
+          />
+        </label>
+        <label className="block p-5">
+          Message
+          <textarea
+            name="message"
+            className="textarea textarea-bordered"
+            placeholder="Write Message"
+          />
+        </label>
+        <input
+          className="m-3 rounded-md bg-red-400 p-3"
+          type="submit"
+          value="Send"
+        />
+      </form>
+    </>
   );
 };
 
