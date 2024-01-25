@@ -1,6 +1,19 @@
-# NSUSN Forms
+<div align="center">
+<h1>NSUSN Forms</h1>
 
-Application Form and Contact Form for NSUSN (Frontend + Backend)
+<p>Application Form and Contact Form for NSUSN (Frontend + Backend)</p>
+
+![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)
+
+![ExpressJS](https://img.shields.io/badge/Express%20js-000000?style=for-the-badge&logo=express&logoColor=white)
+
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+
+![NodeJS](https://img.shields.io/badge/Node%20js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
+
+![Screenshot](frontend/public/screenshot.png)
+
+</div>
 
 ## Links
 
