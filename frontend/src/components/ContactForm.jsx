@@ -4,7 +4,7 @@ import Lottie from "react-lottie";
 import ContactAnimation from "../lotties/ContactAnimation.json";
 
 const ContactForm = () => {
-  const defaultOptions = {
+  const contactAnimationOptions = {
     loop: true,
     autoplay: true,
     animationData: ContactAnimation,
@@ -36,13 +36,13 @@ const ContactForm = () => {
   };
 
   return (
-    <main className="m-auto mb-10 w-full p-5 md:w-[900px]">
-      <h1 className="p-5 text-center text-3xl font-bold">
+    <div id="contact-us" className="m-auto mb-20 w-full p-5 pt-28 md:w-[900px]">
+      <h1 className="mb-8 p-5 text-center text-3xl font-bold">
         Get In Touch With Us
       </h1>
       <div className="flex flex-col md:flex-row">
         <div className="w-full md:w-1/2">
-          <Lottie options={defaultOptions} height={400} width={400} />
+          <Lottie options={contactAnimationOptions} height={400} width={400} />
         </div>
 
         <div className="w-full md:w-1/2">
@@ -93,7 +93,7 @@ const ContactForm = () => {
           </form>
         </div>
       </div>
-    </main>
+    </div>
   );
 };
 

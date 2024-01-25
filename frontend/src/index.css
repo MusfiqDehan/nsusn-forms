@@ -94,6 +94,7 @@ h1 {
   outline: none;
   padding: 1rem;
   background: none;
+  margin-bottom: 1.5rem;
 }
 
 .form__label {
