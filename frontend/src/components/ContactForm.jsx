@@ -1,6 +1,7 @@
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import Lottie from "react-lottie";
+import Swal from "sweetalert2";
 import ContactAnimation from "../lotties/ContactAnimation.json";
 
 const ContactForm = () => {
@@ -33,6 +34,14 @@ const ContactForm = () => {
           console.log(error.text);
         },
       );
+  };
+
+  const handleAlert = () => {
+    Swal.fire({
+      title: "Congratulations!",
+      text: "Message Send Successfully! We will get back to you soon with further updates.",
+      icon: "success",
+    });
   };
 
   return (
@@ -86,6 +95,7 @@ const ContactForm = () => {
             </div>
 
             <input
+              onClick={handleAlert}
               type="submit"
               className="form__button"
               value="Send Message"

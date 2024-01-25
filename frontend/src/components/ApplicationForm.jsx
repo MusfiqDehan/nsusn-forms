@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Swal from "sweetalert2";
 
 const ApplicationForm = () => {
   const [name, setName] = useState("");
@@ -49,6 +50,14 @@ const ApplicationForm = () => {
       .then((response) => response.json())
       .then((data) => console.log(data))
       .catch((error) => console.error("Error:", error));
+  };
+
+  const handleAlert = () => {
+    Swal.fire({
+      title: "Congratulations!",
+      text: "Applications Submitted Successfully! We will get back to you soon with further updates.",
+      icon: "success",
+    });
   };
 
   return (
@@ -292,7 +301,12 @@ const ApplicationForm = () => {
                 required
               />
             </div>
-            <input className="form__button" type="submit" value="Submit" />
+            <input
+              onClick={handleAlert}
+              className="form__button"
+              type="submit"
+              value="Submit"
+            />
           </form>
         </div>
       </div>
