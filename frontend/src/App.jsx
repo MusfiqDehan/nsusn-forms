@@ -1,12 +1,15 @@
 import ContactForm from "./components/ContactForm";
 import ApplicationForm from "./components/ApplicationForm";
+import Home from "./components/Home";
+import Footer from "./components/Footer";
 
 const App = () => {
   return (
     <>
+      <Home />
       <ApplicationForm />
-      <h1 className="bg-red-300 py-5 text-3xl underline">Hello world!</h1>
       <ContactForm />
+      <Footer />
     </>
   );
 };
