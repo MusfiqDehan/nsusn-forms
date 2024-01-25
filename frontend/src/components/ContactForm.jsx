@@ -46,7 +46,7 @@ const ContactForm = () => {
 
   return (
     <div id="contact-us" className="m-auto mb-20 w-full p-5 pt-28 md:w-[900px]">
-      <h1 className="mb-8 p-5 text-center text-3xl font-bold">
+      <h1 className="mb-8 p-5 text-center text-4xl font-bold">
         Get In Touch With Us
       </h1>
       <div className="flex flex-col md:flex-row">

@@ -20,14 +20,20 @@ const Banner = () => {
           height={400}
           width={600}
         />
-        <div className="text-center lg:ml-10 lg:text-left">
-          <h1 className="text-3xl font-bold lg:text-5xl">
-            The Next LaunchPad!
+        <div className="w-2/3 text-center lg:ml-10 lg:text-left">
+          <h1 className="text-3xl font-bold lg:text-6xl">
+            The Next LaunchPad <br />
+            is Coming!
           </h1>
-          <p className="py-6">To Pave The Pathway to Your Successful Venture</p>
+          <p className="py-6">
+            NSU Startup's Next is delighted to host The Next LaunchPad -
+            Flagship Incubation 2024. Prepare yourself for a transformative
+            journey as part of our Third Cohort! To Pave The Pathway to Your
+            Successful Venture....
+          </p>
           <a
             href="#apply-now"
-            className="btn bg-purple-900 px-10 text-white hover:bg-purple-800 hover:px-11 hover:shadow-xl hover:transition "
+            className="btn bg-purple-900 px-10 text-2xl text-white hover:bg-purple-800 hover:px-11 hover:shadow-xl hover:transition "
           >
             Apply Now!
           </a>

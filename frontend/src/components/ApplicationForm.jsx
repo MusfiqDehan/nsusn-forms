@@ -62,7 +62,7 @@ const ApplicationForm = () => {
 
   return (
     <div id="apply-now" className="pt-28">
-      <h1 className="text-center text-3xl font-bold">Application Form</h1>
+      <h1 className="text-center text-4xl font-bold">Application Form</h1>
       <div className="flex items-center justify-center p-12">
         <div className="mx-auto w-full max-w-[550px]">
           <form onSubmit={handleSubmit}>
