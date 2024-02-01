@@ -1,13 +1,22 @@
 /* Global  */
 
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Poppins:wght@400;700;900&display=swap");
 
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
-body {
-  font-family: "Roboto", sans-serif;
+html {
+  scroll-behavior: smooth;
+}
+
+p,
+a {
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  font-family: "Merriweather", serif;
 }
 
 /* Contact Form  */
@@ -19,7 +28,7 @@ body {
   --input-color: #80868b;
   --border-color: #dadce0;
   /*===== Fuente y tipografia =====*/
-  --body-font: "Roboto", sans-serif;
+  --body-font: "Poppins", sans-serif;
   --normal-font-size: 1rem;
   --small-font-size: 0.75rem;
 }
