@@ -1,6 +1,7 @@
-import ContactForm from "./components/ContactForm";
-import ApplicationForm from "./components/ApplicationForm";
 import Home from "./components/Home";
+import ApplicationForm from "./components/ApplicationForm";
+import ContactForm from "./components/ContactForm";
+import Calendly from "./components/Calendly";
 import Footer from "./components/Footer";
 
 const App = () => {
@@ -9,6 +10,7 @@ const App = () => {
       <Home />
       <ApplicationForm />
       <ContactForm />
+      {/* <Calendly /> */}
       <Footer />
     </>
   );
