@@ -71,7 +71,7 @@ const ApplicationForm = () => {
                 Name
               </label>
               <input
-                className="w-full rounded-md border border-[#e0e0e0] bg-white px-6 py-3 text-base font-medium text-[#6B7280] outline-none focus:border-[#59358a] focus:shadow-md"
+                className="w-full rounded-xl border-2 border-[#e0e0e0] bg-inherit px-6 py-3 text-base font-medium text-[#6B7280] outline-none focus:border-[#59358a] focus:shadow-md"
                 type="text"
                 value={name}
                 onChange={(e) => setName(e.target.value)}
@@ -83,7 +83,7 @@ const ApplicationForm = () => {
                 Email
               </label>
               <input
-                className="w-full rounded-md border border-[#e0e0e0] bg-white px-6 py-3 text-base font-medium text-[#6B7280] outline-none focus:border-[#59358a] focus:shadow-md"
+                className="w-full rounded-xl border-2 border-[#e0e0e0] bg-inherit px-6 py-3 text-base font-medium text-[#6B7280] outline-none focus:border-[#59358a] focus:shadow-md"
                 type="email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
@@ -95,7 +95,7 @@ const ApplicationForm = () => {
                 Contact No
               </label>
               <input
-                className="w-full rounded-md border border-[#e0e0e0] bg-white px-6 py-3 text-base font-medium text-[#6B7280] outline-none focus:border-[#59358a] focus:shadow-md"
+                className="w-full rounded-xl border-2 border-[#e0e0e0] bg-inherit px-6 py-3 text-base font-medium text-[#6B7280] outline-none focus:border-[#59358a] focus:shadow-md"
                 type="text"
                 value={contactNo}
                 onChange={(e) => setContactNo(e.target.value)}
@@ -108,7 +108,7 @@ const ApplicationForm = () => {
                 LinkedIn Link
               </label>
               <input
-                className="w-full rounded-md border border-[#e0e0e0] bg-white px-6 py-3 text-base font-medium text-[#6B7280] outline-none focus:border-[#59358a] focus:shadow-md"
+                className="w-full rounded-xl border-2 border-[#e0e0e0] bg-inherit px-6 py-3 text-base font-medium text-[#6B7280] outline-none focus:border-[#59358a] focus:shadow-md"
                 type="text"
                 value={linkedinLink}
                 onChange={(e) => setLinkedinLink(e.target.value)}
@@ -120,7 +120,7 @@ const ApplicationForm = () => {
                 Idea Name
               </label>
               <input
-                className="w-full rounded-md border border-[#e0e0e0] bg-white px-6 py-3 text-base font-medium text-[#6B7280] outline-none focus:border-[#59358a] focus:shadow-md"
+                className="w-full rounded-xl border-2 border-[#e0e0e0] bg-inherit px-6 py-3 text-base font-medium text-[#6B7280] outline-none focus:border-[#59358a] focus:shadow-md"
                 type="text"
                 value={ideaName}
                 onChange={(e) => setIdeaName(e.target.value)}
@@ -132,7 +132,7 @@ const ApplicationForm = () => {
                 Startup Site Link
               </label>
               <input
-                className="w-full rounded-md border border-[#e0e0e0] bg-white px-6 py-3 text-base font-medium text-[#6B7280] outline-none focus:border-[#59358a] focus:shadow-md"
+                className="w-full rounded-xl border-2 border-[#e0e0e0] bg-inherit px-6 py-3 text-base font-medium text-[#6B7280] outline-none focus:border-[#59358a] focus:shadow-md"
                 type="text"
                 value={startupSiteLink}
                 onChange={(e) => setStartupSiteLink(e.target.value)}
@@ -145,7 +145,7 @@ const ApplicationForm = () => {
                 FB Page Link
               </label>
               <input
-                className="w-full rounded-md border border-[#e0e0e0] bg-white px-6 py-3 text-base font-medium text-[#6B7280] outline-none focus:border-[#59358a] focus:shadow-md"
+                className="w-full rounded-xl border-2 border-[#e0e0e0] bg-inherit px-6 py-3 text-base font-medium text-[#6B7280] outline-none focus:border-[#59358a] focus:shadow-md"
                 type="text"
                 value={fbPageLink}
                 onChange={(e) => setFBPageLink(e.target.value)}
@@ -194,7 +194,7 @@ const ApplicationForm = () => {
                 Domain Type
               </label>
               <input
-                className="w-full rounded-md border border-[#e0e0e0] bg-white px-6 py-3 text-base font-medium text-[#6B7280] outline-none focus:border-[#59358a] focus:shadow-md"
+                className="w-full rounded-xl border-2 border-[#e0e0e0] bg-inherit px-6 py-3 text-base font-medium text-[#6B7280] outline-none focus:border-[#59358a] focus:shadow-md"
                 type="text"
                 value={domainType}
                 onChange={(e) => setDomainType(e.target.value)}
@@ -206,7 +206,7 @@ const ApplicationForm = () => {
                 Problem Statement
               </label>
               <input
-                className="w-full rounded-md border border-[#e0e0e0] bg-white px-6 py-3 text-base font-medium text-[#6B7280] outline-none focus:border-[#59358a] focus:shadow-md"
+                className="w-full rounded-xl border-2 border-[#e0e0e0] bg-inherit px-6 py-3 text-base font-medium text-[#6B7280] outline-none focus:border-[#59358a] focus:shadow-md"
                 type="text"
                 value={problem}
                 onChange={(e) => setProblem(e.target.value)}
@@ -218,7 +218,7 @@ const ApplicationForm = () => {
                 Your Solution
               </label>
               <input
-                className="w-full rounded-md border border-[#e0e0e0] bg-white px-6 py-3 text-base font-medium text-[#6B7280] outline-none focus:border-[#59358a] focus:shadow-md"
+                className="w-full rounded-xl border-2 border-[#e0e0e0] bg-inherit px-6 py-3 text-base font-medium text-[#6B7280] outline-none focus:border-[#59358a] focus:shadow-md"
                 type="text"
                 value={solution}
                 onChange={(e) => setSolution(e.target.value)}
@@ -230,7 +230,7 @@ const ApplicationForm = () => {
                 Cofounder Details
               </label>
               <input
-                className="w-full rounded-md border border-[#e0e0e0] bg-white px-6 py-3 text-base font-medium text-[#6B7280] outline-none focus:border-[#59358a] focus:shadow-md"
+                className="w-full rounded-xl border-2 border-[#e0e0e0] bg-inherit px-6 py-3 text-base font-medium text-[#6B7280] outline-none focus:border-[#59358a] focus:shadow-md"
                 type="text"
                 value={cofounderDetails}
                 onChange={(e) => setCofounderDetails(e.target.value)}
@@ -271,7 +271,7 @@ const ApplicationForm = () => {
                 Pitch Deck File Link
               </label>
               <input
-                className="w-full rounded-md border border-[#e0e0e0] bg-white px-6 py-3 text-base font-medium text-[#6B7280] outline-none focus:border-[#59358a] focus:shadow-md"
+                className="w-full rounded-xl border-2 border-[#e0e0e0] bg-inherit px-6 py-3 text-base font-medium text-[#6B7280] outline-none focus:border-[#59358a] focus:shadow-md"
                 type="text"
                 onChange={(e) => setPitchDeckFile(e.target.value)}
                 required
@@ -282,7 +282,7 @@ const ApplicationForm = () => {
                 Product Demo Link
               </label>
               <input
-                className="w-full rounded-md border border-[#e0e0e0] bg-white px-6 py-3 text-base font-medium text-[#6B7280] outline-none focus:border-[#59358a] focus:shadow-md"
+                className="w-full rounded-xl border-2 border-[#e0e0e0] bg-inherit px-6 py-3 text-base font-medium text-[#6B7280] outline-none focus:border-[#59358a] focus:shadow-md"
                 type="text"
                 value={productDemoLink}
                 onChange={(e) => setProductDemoLink(e.target.value)}
@@ -294,7 +294,7 @@ const ApplicationForm = () => {
                 Expected Support
               </label>
               <input
-                className="w-full rounded-md border border-[#e0e0e0] bg-white px-6 py-3 text-base font-medium text-[#6B7280] outline-none focus:border-[#59358a] focus:shadow-md"
+                className="w-full rounded-xl border-2 border-[#e0e0e0] bg-inherit px-6 py-3 text-base font-medium text-[#6B7280] outline-none focus:border-[#59358a] focus:shadow-md"
                 type="text"
                 value={expectedSupport}
                 onChange={(e) => setExpectedSupport(e.target.value)}
@@ -303,7 +303,7 @@ const ApplicationForm = () => {
             </div>
             <input
               onClick={handleAlert}
-              className="form__button"
+              className="form__button rounded-2xl"
               type="submit"
               value="Submit"
             />
