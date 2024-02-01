@@ -49,6 +49,9 @@ const Navbar = () => {
             <li>
               <a href="#apply-now">Apply Now</a>
             </li>
+            {/* <li>
+              <a href="#book-appointment">Book An Appointment!</a>
+            </li> */}
           </ul>
         </div>
         <a className="">
@@ -68,6 +71,9 @@ const Navbar = () => {
           <li>
             <a href="#apply-now">Apply Now</a>
           </li>
+          {/* <li>
+            <a href="#book-appointment">Book An Appointment!</a>
+          </li> */}
         </ul>
       </div>
       <div className="navbar-end">
