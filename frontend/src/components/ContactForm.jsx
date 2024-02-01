@@ -45,16 +45,22 @@ const ContactForm = () => {
   };
 
   return (
-    <div id="contact-us" className="m-auto mb-20 w-full p-5 pt-28 md:w-[900px]">
+    <div
+      id="contact-us"
+      className="m-auto mb-20 w-full p-5 pt-28 lg:w-[1024px]"
+    >
       <h1 className="mb-8 p-5 text-center text-4xl font-bold">
         Get In Touch With Us
       </h1>
-      <div className="flex flex-col md:flex-row">
-        <div className="w-full md:w-1/2">
-          <Lottie options={contactAnimationOptions} height={400} width={400} />
-        </div>
+      <div className="flex flex-col items-center justify-between md:flex-row">
+        <Lottie
+          className="w-full max-w-md lg:max-w-lg"
+          options={contactAnimationOptions}
+          height="100%"
+          width="100%"
+        />
 
-        <div className="w-full md:w-1/2">
+        <div className="w-3/4 lg:pl-6">
           <form ref={form} onSubmit={sendEmail} action="" className="">
             <div className="form__div">
               <input
