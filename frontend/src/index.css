@@ -78,23 +78,22 @@ h1 {
   height: 100%;
   font-size: var(--normal-font-size);
   border: 2px solid var(--border-color);
-  border-radius: 0.5rem;
+  border-radius: 0.75rem;
   outline: none;
   padding: 1rem;
-  background: none;
-  z-index: 1;
+  background: inherit;
 }
 
 .form__textarea {
   width: 100%;
-  height: 100%;
   font-size: var(--normal-font-size);
   border: 2px solid var(--border-color);
   border-radius: 0.5rem;
   outline: none;
   padding: 1rem;
-  background: none;
-  margin-bottom: 1.5rem;
+  background: inherit;
+  margin-bottom: 3rem;
+  overflow: hidden;
 }
 
 .form__label {
@@ -107,6 +106,11 @@ h1 {
   font-size: var(--normal-font-size);
   transition: 0.3s;
 }
+
+[data-theme="dark"] .form__label {
+  background-color: #1d232a;
+}
+
 .form__button {
   display: block;
   margin-left: auto;
@@ -115,11 +119,16 @@ h1 {
   border: 2px solid var(--first-color);
   color: var(--first-color);
   font-size: var(--normal-font-size);
-  border-radius: 0.25rem;
+  border-radius: 0.75rem;
   cursor: pointer;
   transition: 0.3s;
-  margin-top: 70px;
+  margin-top: 20px;
   width: 100%;
+  z-index: 1;
+}
+
+#contact-us .form__button {
+  margin-top: 70px;
 }
 
 .form__button:hover {
@@ -129,8 +138,7 @@ h1 {
 }
 
 /*Input focus move up label*/
-.form__input:focus + .form__label,
-.form__textarea:focus + .form__label {
+.form__input:focus + .form__label {
   top: -0.5rem;
   left: 0.8rem;
   color: var(--first-color);
@@ -140,9 +148,7 @@ h1 {
 }
 
 /*Input focus sticky top label*/
-.form__input:not(:placeholder-shown).form__input:not(:focus) + .form__label,
-.form__textarea:not(:placeholder-shown).form__textarea:not(:focus)
-  + .form__label {
+.form__input:not(:placeholder-shown):not(:focus) + .form__label {
   top: -0.5rem;
   left: 0.8rem;
   z-index: 10;
