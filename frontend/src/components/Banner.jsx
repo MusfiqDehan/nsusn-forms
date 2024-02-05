@@ -71,7 +71,7 @@ const Banner = () => {
           </p>
           <a
             href="#apply-now"
-            className="btn bg-purple-900 px-10 text-xl text-white transition-all duration-300 ease-in-out hover:scale-105 hover:bg-purple-800 hover:px-11 hover:shadow-xl lg:text-2xl"
+            className="btn bg-purple-900 px-10 text-[12px] text-white transition-all duration-300 ease-in-out hover:scale-105 hover:bg-purple-800 hover:px-11 hover:shadow-xl lg:text-2xl"
           >
             Apply Now!
           </a>
